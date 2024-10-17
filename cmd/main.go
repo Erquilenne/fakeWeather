@@ -31,7 +31,7 @@ func main() {
 	// fmt.Println(resp)
 	http.HandleFunc("/geo/1.0/direct", geoHandler)
 	http.HandleFunc("/data/2.5/forecast", forecastHandler)
-	fmt.Println("Server is running on port 8081")
+	fmt.Println("Server is running on port 8082")
 	http.ListenAndServe(":8082", nil)
 }
 
